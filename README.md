@@ -1,4 +1,5 @@
 Simple Nodejs hello world app for Kubernetes demonstration purpose.
+
 git clone https://github.com/ikovac/kubernetes-hello-world.git
 
 Nodejs application can be found in index.js file. 
