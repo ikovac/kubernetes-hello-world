@@ -1,0 +1,18 @@
+  
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubernetes-hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubernetes-hello
+  template:
+    metadata:
+      labels:
+        app: kubernetes-hello
+    spec:
+      containers:
+      - image: ikovac01/kubernetes-hello
+        name: kubernetes-hello
