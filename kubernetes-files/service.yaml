@@ -10,3 +10,10 @@ spec:
     targetPort: 3000
   selector:
     app: kubernetes-hello
+
+
+
+# kubectl autoscale deployment kubernetes-hello --cpu-percent=30 --min=1 --max=5
+# kubectl get hpa
+# kubectl describe hpa
+# kubectl run -it --rm --restart=Never loadgenerator --image=busybox -- sh -c "while true; do wget -O - -q http://kubernetes-hello-service.default:3000; done"
