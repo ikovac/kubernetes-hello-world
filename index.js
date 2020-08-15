@@ -1,9 +1,10 @@
 const express = require('express');
+const os = require('os');
 
 const app = express();
 
 app.use('/', (req, res) => {
-    res.send('Hello world!');
+    res.send(`Hello world from ${os.hostname()}`);
 });
 
 app.listen(3000, () => {
